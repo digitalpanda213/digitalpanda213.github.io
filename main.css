@@ -4,12 +4,12 @@
 }
 
 #name {
-	animation: fade-in 2s;
+	animation: fadein 2s;
 }
 #catchphrase1 {
-	animation: fade-in 2s;
+	animation: fadein 2s;
 	animation-delay: 2s;
 }
 #sub-catchphrase {
-	animation: fade-in 2s 4s;
+	animation: fadein 2s 4s;
 }
