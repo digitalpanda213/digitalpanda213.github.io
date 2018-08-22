@@ -6,3 +6,7 @@
 #name {
 	animation: fade-in 2s;
 }
+#catchphrase1 {
+	animation-delay: 2s;
+	animation: fade-in 2s;
+}
