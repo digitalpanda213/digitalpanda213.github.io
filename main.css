@@ -16,18 +16,22 @@
 }
 
 .fadein1 {
-	opacity: 0;
 	animation: fadeIn 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
 }
 .fadein2 {
-	opacity: 0;
 	animation: fadeIn 2s;
-	animation-duration: 2s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+
 }
 .fadein3 {
-	opacity: 0;
 	animation: fadeIn 2s;
-	animation-duration: 4s;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
 }
 #resumebutton {
   position: relative;
