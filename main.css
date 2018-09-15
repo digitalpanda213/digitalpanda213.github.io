@@ -1,3 +1,178 @@
+h1{
+ text-align: center;
+ font-size: 7em;
+ line-height: 0;
+}
+h2{
+ text-align: center;
+ font-size: 6em;
+ line-height: 0;
+}
+h3{
+ text-align: center;
+ font-size: 5em;
+ line-height: 0;
+}
+h4{
+ text-align: center;
+ font-size: 4em;
+  line-height: 0;
+}
+h5{
+ text-align: center;
+ font-size: 3em;
+  line-height: 0;
+}
+h6{
+	text-align: center;
+ font-size: 2em;
+  line-height: 0;
+}
+img { width: 100%; height: auto; }
+
+p {
+	color: #FFF;
+	font-size: 1.2em;
+}
+
+body{
+margin: 0;
+padding: 0;
+font-size: 1vw; 
+background-color: #222;
+font-family: "Lucida Console";
+}
+
+
+
+.header {
+	padding-top: 3em;
+	padding-bottom: 2em;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 5px solid;
+	border-color: linear-gradient(271deg, #444, #9f1, #ae1);
+		background: linear-gradient(271deg, #9134df, #54bde0, #484eea);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 27s ease infinite;
+-moz-animation: AnimationName 27s ease infinite;
+animation: AnimationName 27s ease infinite;
+
+	max-height: 30em;
+}
+/* .header > * {
+  flex: 1 100%;
+} */
+.left-header-image{
+	 flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+    margin-bottom: -2em;
+    margin-top: -7em;
+    vertical-align: bottom;
+    min-width: 0%;
+    position: 100% 100%;
+}
+
+.header-center{
+	 flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+	min-width: 50%;
+	margin: auto;
+	max-height: 50%;
+}
+.header-buttons{
+	width:100%;
+}
+.right-header-image{
+	 flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+    margin-bottom: -2em;
+    margin-top: -7em;
+    vertical-align: bottom;
+    transform: scaleX(-1);
+    min-width: 0%;
+    position: 100% 100%;
+}
+
+
+.content{
+	margin-bottom:100px;
+}
+.items {
+	display: flex;
+}
+.title {
+	color:white;
+	text-align: left;
+	margin: 1em;
+	margin-left: 0;
+}
+
+
+
+.footer{
+	
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100px;
+    background:#ccc;
+}
+#portals {
+	flex-basis: 33%;
+	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+}
+#blog {
+	flex-basis: 33%;
+	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+}
+
+
+
+
+
+
+#resumebutton {
+	display: inline-block;
+    border: none;
+    font-size: 1.7em;
+    color: white;
+    background-color: #1a99FF;
+    /* padding: 1em 2em; */
+    width: 5em;
+    line-height: 3em;
+    cursor: pointer;
+    border-radius: 20%;
+    text-decoration: none;
+
+}
+#announcement {
+	animation: fadeIn 2;
+	font-size: 20em;
+	text-align: center;
+	text-shadow: black;
+	color: white;
+}
+
+#announcementdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#portalsbody{
+	background: linear-gradient(271deg, #9134df, #54bde0, #484eea);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 27s ease infinite;
+-moz-animation: AnimationName 27s ease infinite;
+animation: AnimationName 27s ease infinite;
+}
+
+
+
 @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -17,50 +192,45 @@
 
 .fadein1 {
 	animation: fadeIn 2s;
-	animation-fill-mode: forwards;
+	animation-fill-mode: both;
 	animation-timing-function: ease-in;
 }
 .fadein2 {
 	animation: fadeIn 2s;
 	animation-delay: 2s;
-	animation-fill-mode: forwards;
+	animation-fill-mode: both;
 	animation-timing-function: ease-in;
 
 }
 .fadein3 {
 	animation: fadeIn 2s;
 	animation-delay: 4s;
-	animation-fill-mode: forwards;
+	animation-fill-mode: both;
 	animation-timing-function: ease-in;
 }
-#resumebutton {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
-  display: block;
-  width: 100px;
-  height: 100px;
-  font-size: 1.3em;
-  font-weight: light;
-  font-family: 'Trebuchet MS', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 100px;
-  letter-spacing: -1px;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  background: #5a99d4;
-  cursor: pointer;
-  box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
-  -webkit-animation: pulse 1.5s infinite;
-}
+
 .pulse-button:hover {
   -webkit-animation: none;
 }
 
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
 @-webkit-keyframes pulse {
   0% {
     @include transform(scale(.9));

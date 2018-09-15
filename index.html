@@ -2,7 +2,6 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Andrew Coates</title>
     <meta name="description" content="A portfolio website for Andrew Coates">
@@ -11,42 +10,61 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
-    <!-- Add your site or application content here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <section class="jumbotron">
-      <div class="container">
-        <div class="row text-center">
-          <h1 class="fadein1" id="name">Andrew Lee Coates</h1>
-          <h3 class="fadein2" id="catchphrase1">Aspiring Student</h3> <!-- make this text rotate out -->
-          <h6 class="fadein3" id="sub-catchphrase">(also a pretty rad dude)</h5>
-          <a id="resume" href="edited_resume-Andrew-Coates.pdf" role="button">Resume</a> <!-- example of a button here -->
+
+    <section class="header">
+      <div class="left-header-image" >
+        <!-- <img src="Scrolls.png" type="image" >  style='height: 100%; width: 100%; object-fit: contain' -->
+      </div>
+      
+      <div class="header-center">
+        <h1 class="fadein1" id="name" face="Verdana">Andrew Lee Coates</h1>
+        <h4 class="fadein2" id="catchphrase1">Aspiring Student</h3> <!-- make this text rotate out -->
+        <h6 class="fadein3" id="sub-catchphrase">(also a pretty rad dude)</h5>
+        <div class="header-buttons" style="text-align: center;">
+          <a id="resumebutton" href="edited_resume-Andrew-Coates.pdf" role="button">Resume</a> <!-- example of a button here -->
         </div>
       </div>
+      
+      <div class="right-header-image" >
+        <!-- <img type="image"src="Scrolls.png"> -->
+      </div>
     </section>
-    <section class="container">
-      <div class="row">
-        <figure class="col-sm-6">
-          <p>Games</p>
-          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/kitchen.jpg">
+
+
+
+    <section class="content">
+      <div class="items">
+        <figure id="portals" >
+          <h6 class="title">Games</h6>
+          <a href="Portals.html" target="_self">
+            <img type="image" src="FeatureGraphicCapture.PNG" >
+          </a>
         </figure>
-        <figure class="col-sm-6">
-          <p>Python</p>
-          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/woodwork.jpg">
+        <figure id="blog">
+          <h6 class="title">Blog</h6>
+          <a href="Blog.html" target="_self">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/woodwork.jpg">
+          </a>
         </figure>
       </div>
+    </section>
+
+
+    <section class="footer">
+      <p>Contact:</p>
+        <ul>
+          <li>coatesal@appstate.edu</li>
+          <li>(561)-603-9316</li>
+          <li>746 Howard St., B13, Boone, NC 28607</li>
+        </ul>
     </section>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
