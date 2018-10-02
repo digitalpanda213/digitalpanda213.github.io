@@ -1,0 +1,220 @@
+img {
+	width: 100%; 
+	height: auto; 
+}
+/* p {
+	color: #FFF;
+	font-size: 14px;
+} */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 16px;
+	background-color: #222;
+	font-family: "Lucida Console";
+	display: inline-block;
+}
+h1 {
+	color: black;
+}
+
+h2 {
+	color: black;
+	font-size: 32px;
+	margin: 5px  0px 15px 0px;
+}
+
+h3 {
+	color: black;
+}
+
+p{
+	margin: 5px 5px 5px 15px;
+	line-height: 1.2em;
+}
+
+.header {
+	background-color: gray;
+	/*
+	background: linear-gradient(271deg, #9134df, #54bde0, #484eea);
+	background-size: 600% 600%;
+	-webkit-animation: AnimationName 27s ease infinite;
+	-moz-animation: AnimationName 27s ease infinite;
+	animation: AnimationName 27s ease infinite;
+*/
+	
+	align-content: center;
+	margin-bottom: 20px;
+	height: 20%;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	padding:20px;
+}
+
+.body{
+	min-height: 70%;
+	padding-bottom: 20px;
+}
+.left {
+	background-color: grey;
+	width: calc(70% - 20px);
+	float: left;
+	margin-right: 20px;
+	padding: 10px 20px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.post {
+	color: black;
+	background-color: lightgrey;
+	
+	margin: 0;
+	display:flex;
+	margin: 0 0 20px 20px;
+	width: 100%;
+}
+.text {
+	padding: 10px 20px 10px 10px;
+
+}
+.tags{
+	font-size: 14px;
+	font-style: oblique;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+.readmore {
+	margin: 0 0px 0px 15px;
+}
+.tag {
+	height: inherit;
+	float: right;
+	min-width: 7%;
+}
+.right {
+	background-color: grey;
+	width: 30%;
+	float: right;
+	display: flex;
+	padding: 10px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: space-between;
+}
+.sidebox {
+	background-color: lightgrey;
+	/* /max-height: 30%; */
+}
+.sidebox.about {
+	border-bottom:2px dashed grey;
+}
+
+.filter { 
+	font-size: 18px;
+/*	margin: 0px -10px 0px -10px;*/
+	padding: 15px;
+}
+.blue {
+	background-color:#2E9EDC;
+}
+.green {
+	background-color:#1FB944;
+}
+.red{
+	background-color: #CB2E31;
+}
+.footer {
+	margin-top: 20px;
+	height-max: 10%;
+	width: 100%;
+	padding: 20px 0 20px 40px;
+	background: linear-gradient(271deg, #9134df, #54bde0, #484eea);
+	background-size: 600% 600%;
+	-webkit-animation: AnimationName 27s ease infinite;
+	-moz-animation: AnimationName 27s ease infinite;
+	animation: AnimationName 27s ease infinite;
+	display: inline-block;
+}
+
+
+@media screen and (max-width: 800px) {
+  .right { 
+    width: 100%;
+
+		margin-top: 20px;
+  }
+  .left {
+	width: 100%;
+
+  }
+  body {
+  	padding-left: 5%;
+  	padding-right: 5%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@-webkit-keyframes pulse {
+  0% {
+    @include transform(scale(.9));
+  }
+  70% {
+    @include transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+    @include transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
