@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1{
  text-align: center;
  font-size: 3em;
@@ -317,4 +318,325 @@ animation: AnimationName 27s ease infinite;
     @include transform(scale(.9));
     box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
   }
+=======
+h1{
+ text-align: center;
+ font-size: 3em;
+ line-height: 0;
+}
+h2{
+ text-align: center;
+ font-size: 2.5em;
+ line-height: 0;
+}
+h3{
+ text-align: center;
+ font-size: 2em;
+ line-height: 0;
+}
+h4{
+ text-align: center;
+ font-size: 1.5em;
+  line-height: 0;
+}
+h5{
+ text-align: center;
+ font-size: 1em;
+  line-height: 0;
+}
+h6{
+	text-align: center;
+ font-size: .5em;
+  line-height: 0;
+}
+img {
+ width: 100%; 
+ height: auto; 
+}
+
+/* p {
+	color: #FFF;
+	font-size: 14px;
+} */
+* {
+	box-sizing: border-box;
+}
+html, div{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+min-height: 200px;
+margin: 0;
+padding: 0;
+font-size: 14px;
+background-color: #111;
+font-family: "Lucida Console";
+
+}
+#name {
+ text-align: center;
+ font-size: calc(3vw + 2vmin);
+ line-height: 0;
+ margin: 6vh 0 7vh 0;
+}
+#catchphrase1 {
+ text-align: center;
+ font-size: calc(2vw + 2vmin);
+ line-height: 0;
+ margin: 6vh 0 6vh 0;
+ filter: opacity(60%);
+}
+#catchphrase2 {
+ text-align: center;
+ font-size: calc(.7vw + 2vmin);
+ line-height: 0;
+margin: 2vh;
+filter: opacity(40%);
+}
+
+.header {
+padding-top: 2em;
+padding-bottom: 2em;
+display: flex;
+justify-content: space-between;
+border-bottom: 7px solid;
+border-color: #111;
+background: linear-gradient(271deg, #9134df, #54bde0, #484eea);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 27s ease infinite;
+-moz-animation: AnimationName 27s ease infinite;
+animation: AnimationName 27s ease infinite;
+
+
+}
+/* .header > * {
+  flex: 1 100%;
+} */
+.left-header-image{
+	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+    margin-bottom: -2em;
+    margin-top: -7em;
+    vertical-align: bottom;
+    min-width: 0%;
+    position: 100% 100%;
+}
+
+.header-center{
+	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+	min-width: 80%;
+	margin: auto;
+	max-height: 50%;
+}
+.header-buttons{
+	width:100%;
+}
+.right-header-image{
+	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+    margin-bottom: -2em;
+    margin-top: -7em;
+    vertical-align: bottom;
+    transform: scaleX(-1);
+    min-width: 0%;
+    position: 100% 100%;
+}
+
+
+.content{
+	max-width: 100%;
+	height: 45vh;
+	margin: calc(3vw + 1vmin);
+}
+.items {
+	display: flex;
+	justify-content: center;
+
+}
+.title {
+	color:#FFF;
+	text-align: center;
+	margin-top: 21vh;
+	font-size: calc(3vw + 2vmin);
+}
+#games {
+	text-decoration: none;
+	flex-basis: 1;
+	width: 100%;
+	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+	background-image: url("FeatureGraphicCapture.PNG");
+	background-size: cover;
+	background-position: center;
+	margin: 2vw;
+	filter: grayscale(1);
+}
+#blog {
+	text-decoration: none;
+	flex-basis: 1;
+	width: 100%;
+	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+/*	background-image: url("The-Matrix.jpg");*/
+	background-color: #444;
+	background-size: cover;
+	background-position: center;
+	margin: 2vw;
+	filter: grayscale(1);
+}
+#sandbox {
+	text-decoration: none;
+	flex-basis: 1;
+	width: 100%;
+	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+	background-image: url("sandbox.jpg");
+	background-size: cover;
+	background-position: center;
+	margin: 2vw;
+	filter: grayscale(1);
+}
+.divlink {
+	width: 100%;
+	height: 100%;
+}
+
+#wipwarning{
+	color: #444; 
+	font-size: 2vw;
+}
+
+.footer{
+	clear: both;
+	position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    border-top: 7px solid;
+	border-color: black;
+    background: linear-gradient(271deg, #9134df, #54bde0, #484eea);
+	background-size: 600% 600%;
+
+-webkit-animation: AnimationName 27s ease infinite;
+-moz-animation: AnimationName 27s ease infinite;
+animation: AnimationName 27s ease infinite;
+}
+
+
+
+
+
+
+
+#resumebutton {
+	display: inline-block;
+    border: none;
+    font-size: calc(.3vw + 2vmin);
+    color: #eee;
+    background-color: #111;
+    padding: 0.6em 0.8em;
+    cursor: pointer;
+    border-radius: 20%;
+    text-decoration: none;
+
+}
+#announcement {
+	animation: fadeIn 2;
+	font-size: 6vw;
+	text-align: center;
+	text-shadow: black;
+	color: #eee;
+}
+
+#announcementdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#portalsbody{
+	background: linear-gradient(271deg, #9134df, #54bde0, #484eea);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 27s ease infinite;
+-moz-animation: AnimationName 27s ease infinite;
+animation: AnimationName 27s ease infinite;
+}
+
+
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.fadein1 {
+	animation: fadeIn 2s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in;
+}
+.fadein2 {
+	animation: fadeIn 2s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in;
+
+}
+.fadein3 {
+	animation: fadeIn 2s;
+	animation-delay: 4s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in;
+}
+
+.pulse-button:hover {
+  -webkit-animation: none;
+}
+
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@-webkit-keyframes pulse {
+  0% {
+    @include transform(scale(.9));
+  }
+  70% {
+    @include transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+    @include transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+>>>>>>> d382b69458c4307b35b2ad8e4d1a463e1de2921a
 }
