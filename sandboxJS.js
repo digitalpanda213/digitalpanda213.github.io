@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*jshint esversion: 6 */
 const img = document.getElementById('carousel');
 const rightBtn = document.getElementById('right-btn');
