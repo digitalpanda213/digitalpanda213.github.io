@@ -1,12 +1,14 @@
+/*
 Black: #222;
 Grey: #444;
-offwhite: #BBB;
+darkgrey: #333;
+offwhite: #CCC;
 white: #EEE;
 Blue: #2B7AA6;
 Red: #208F3B;
 Green: #AB292C;
 
-
+*/
 img {
 	width: 100%; 
 	height: auto; 
@@ -21,7 +23,7 @@ img {
 	padding: 0;
 }
 body{
-	color: #BBB;
+	color: #CCC;
 	padding-left: 20%;
 	padding-right: 20%;
 	font-size: 16px;
@@ -83,7 +85,7 @@ p{
 	justify-content: flex-start;
 }
 .post {
-	background-color:#222;
+	background-color:#333;
 	
 	margin: 0;
 	display:flex;
@@ -104,7 +106,7 @@ a.button {
     appearance: button;
 	background-color: #444;
     text-decoration: none;
-    color: #BBB;
+    color: #CCC;
 }
 .readmore {
 	margin: 0 0px 0px 15px;
@@ -119,13 +121,13 @@ a.button {
 	width: 30%;
 	float: right;
 	display: flex;
-	padding: 10px;
+	padding: 68.5px 10px 10px 10px;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-content: space-between;
 }
 .sidebox {
-	background-color: #222;
+	background-color: #333;
 	margin-bottom: 20px;
 	/* /max-height: 30%; */
 }
@@ -151,10 +153,10 @@ a.button {
 }
 .footer {
 	margin-top: 20px;
-	height-max: 10%;
 	width: 100%;
 	padding: 20px 0 20px 40px;
-	background: linear-gradient(271deg, #2B7AA6, #208F3B, #AB292C);
+	background-color: #444;
+	background: linear-gradient(271deg, #AF252E, #2B91B3, #38B32E);
 	background-size: 600% 600%;
 	-webkit-animation: AnimationName 27s ease infinite;
 	-moz-animation: AnimationName 27s ease infinite;

@@ -1,79 +1,39 @@
-
-h1{
- text-align: center;
- font-size: 3em;
- line-height: 0;
-}
-h2{
- text-align: center;
- font-size: 2.5em;
- line-height: 0;
-}
-h3{
- text-align: center;
- font-size: 2em;
- line-height: 0;
-}
-h4{
- text-align: center;
- font-size: 1.5em;
-  line-height: 0;
-}
-h5{
- text-align: center;
- font-size: 1em;
-  line-height: 0;
-}
-h6{
-	text-align: center;
- font-size: .5em;
-  line-height: 0;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 img {
  width: 100%; 
  height: auto; 
 }
 
-/* p {
-	color: #FFF;
-	font-size: 14px;
-} */
-* {
-	box-sizing: border-box;
-}
-html, div{
+div{
 	height: 100%;
 	width: 100%;
-	margin: 0;
-	padding: 0;
 }
 body{
-min-height: 200px;
-margin: 0;
-padding: 0;
-font-size: 14px;
-background-color: #222;
-font-family: "Lucida Console";
-
+	color: #CCC;
+	padding-left: 20%;
+	padding-right: 20%;
+	font-size: 16px;
+	width: 100%;
+	background-color: #222;
+	font-family: "Lucida Console";
+	display: inline-block;
 }
 #name {
  text-align: center;
- font-size: calc(3vw + 2vmin);
- line-height: 0;
- margin: 6vh 0 7vh 0;
+ font-size: 50px;
 }
 #catchphrase1 {
  text-align: center;
- font-size: calc(2vw + 2vmin);
- line-height: 0;
- margin: 6vh 0 6vh 0;
+ font-size: 30px;
  filter: opacity(60%);
 }
 #catchphrase2 {
  text-align: center;
- font-size: calc(.7vw + 2vmin);
- line-height: 0;
-margin: 2vh;
+ font-size: 20px;
 filter: opacity(40%);
 }
 
@@ -81,30 +41,17 @@ filter: opacity(40%);
 padding-top: 2em;
 padding-bottom: 2em;
 display: flex;
-justify-content: space-between;
-border-bottom: 7px solid;
-border-color: #222;
-background: linear-gradient(271deg, #9134df, #54bde0, #484eea);
-background-size: 600% 600%;
+min-height: 30vh;
+justify-content: space-around;
 
--webkit-animation: AnimationName 27s ease infinite;
--moz-animation: AnimationName 27s ease infinite;
-animation: AnimationName 27s ease infinite;
-
-
+	
+	background: linear-gradient(271deg, #2B7AA6, #208F3B, #AB292C);
+	background-size: 600% 600%;
+	-webkit-animation: AnimationName 27s ease infinite;
+	-moz-animation: AnimationName 27s ease infinite;
+	animation: AnimationName 27s ease infinite;
+	
 }
-/* .header > * {
-  flex: 1 100%;
-} */
-.left-header-image{
-	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
-    margin-bottom: -2em;
-    margin-top: -7em;
-    vertical-align: bottom;
-    min-width: 0%;
-    position: 100% 100%;
-}
-
 .header-center{
 	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
 	min-width: 80%;
@@ -114,28 +61,17 @@ animation: AnimationName 27s ease infinite;
 .header-buttons{
 	width:100%;
 }
-.right-header-image{
-	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
-    margin-bottom: -2em;
-    margin-top: -7em;
-    vertical-align: bottom;
-    transform: scaleX(-1);
-    min-width: 0%;
-    position: 100% 100%;
-}
-
-
 .content{
 	max-width: 100%;
-	height: 45vh;
-	margin: calc(3vw + 1vmin);
+	height: 50vh;
+	width: 100%;
 }
 .items {
 	display: flex;
 	justify-content: center;
 
 }
-.title {
+.title { 
 	color:#FFF;
 	text-align: center;
 	margin-top: 21vh;
@@ -143,36 +79,30 @@ animation: AnimationName 27s ease infinite;
 }
 #games {
 	text-decoration: none;
-	flex-basis: 1;
 	width: 100%;
 	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
 	background-image: url("FeatureGraphicCapture.PNG");
 	background-size: cover;
 	background-position: center;
-	margin: 2vw;
 	filter: grayscale(1);
 }
 #blog {
 	text-decoration: none;
-	flex-basis: 1;
 	width: 100%;
 	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
 /*	background-image: url("The-Matrix.jpg");*/
 	background-color: #444;
 	background-size: cover;
 	background-position: center;
-	margin: 2vw;
 	filter: grayscale(1);
 }
 #sandbox {
 	text-decoration: none;
-	flex-basis: 1;
 	width: 100%;
 	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
 	background-image: url("sandbox.jpg");
 	background-size: cover;
 	background-position: center;
-	margin: 2vw;
 	filter: grayscale(1);
 }
 .divlink {
@@ -182,26 +112,23 @@ animation: AnimationName 27s ease infinite;
 
 #wipwarning{
 	color: #444; 
-	font-size: 2vw;
+	font-size: 18px;
+	align-content: center;
+
 }
 
-.footer{
-	clear: both;
-	position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1em;
-    border-top: 7px solid;
-	border-color: black;
-    background: linear-gradient(271deg, #9134df, #54bde0, #484eea);
+.footer {
+	margin-top: 20px;
+	height: 20vh;
+	width: 100%;
+	padding: 20px 0 20px 40px;
+	background: linear-gradient(271deg, #2B7AA6, #208F3B, #AB292C);
 	background-size: 600% 600%;
-
--webkit-animation: AnimationName 27s ease infinite;
--moz-animation: AnimationName 27s ease infinite;
-animation: AnimationName 27s ease infinite;
+	-webkit-animation: AnimationName 27s ease infinite;
+	-moz-animation: AnimationName 27s ease infinite;
+	animation: AnimationName 27s ease infinite;
+	display: inline-block;
 }
-
 
 
 
@@ -211,13 +138,14 @@ animation: AnimationName 27s ease infinite;
 #resumebutton {
 	display: inline-block;
     border: none;
-    font-size: calc(.3vw + 2vmin);
+    font-size: 18px;
     color: #eee;
     background-color: #222;
-    padding: 0.6em 0.8em;
+    padding: 20px 28px;
     cursor: pointer;
     border-radius: 20%;
     text-decoration: none;
+	margin-top: 40px;
 
 }
 #announcement {
@@ -229,9 +157,6 @@ animation: AnimationName 27s ease infinite;
 }
 
 #announcementdiv{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 100vh;
@@ -317,5 +242,13 @@ animation: AnimationName 27s ease infinite;
     100% {
     @include transform(scale(.9));
     box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  body {
+  	padding-left: 0%;
+  	padding-right: 0%;
   }
 }
