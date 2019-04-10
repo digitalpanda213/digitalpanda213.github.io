@@ -1,39 +1,127 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC");
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC');
+/* #region css reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* #endregion */
 html,
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 body {
   text-align: center;
   color: #3e4047;
-  font-family: "Noto Serif TC", serif;
+  font-family: 'Noto Serif TC', serif;
   font-size: 1.2rem;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url(notebook2.jpg);
-  background-repeat: norepeat;
-  background-size: cover;
-  z-index: -1;
-  transition: transform 1.2s cubic-bezier(0.1, 0.18, 0.28, 0.98);
-}
-.background:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(5deg, #ff9c9c, #bccfff, #d8f4ff);
-  mix-blend-mode: screen;
-  opacity: 0.7;
 }
 
 .text-wrapper {
@@ -49,6 +137,7 @@ body {
 
 .welcome {
   font-size: 2rem;
+  color: rgba(175, 175, 175, 0.342);
   position: absolute;
   width: 90%;
   transition: inherit;
@@ -60,7 +149,7 @@ body {
   font-size: 5rem;
   transition: inherit;
 }
-.header:first-letter {
+.header::first-letter {
   font-size: 6.7rem;
 }
 
@@ -89,11 +178,11 @@ body {
   padding-right: 50px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
   position: relative;
 }
 .menu-button:before {
-  content: "";
+  content: '';
   background: #000;
   position: absolute;
   left: 0;
@@ -102,7 +191,7 @@ body {
   height: 100%;
   z-index: -1;
   opacity: 0;
-  margin: 10px;
+  margin: 00px;
   transition: inherit;
 }
 .menu-button:hover {
