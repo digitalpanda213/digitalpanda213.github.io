@@ -56,14 +56,14 @@ function rotate(e) {
         'rotateX(' +
         -offsetY * parallax +
         'deg) rotateY(' +
-        -offsetX * parallax * 2 +
+        -offsetX * parallax * 4 +
         'deg)';
     } else {
       transform =
         'translate3d(' +
         offsetX * parallax +
         'px, ' +
-        offsetY * parallax +
+        offsetY * parallax * 4 +
         'px, 20px)';
     }
     transformLayers[i].el.style.transform = transform;
