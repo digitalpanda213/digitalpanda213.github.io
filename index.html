@@ -11,23 +11,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="navigation.js"></script>
-    <link rel="stylesheet" href="splide/dist/css/themes/splide-default.min.css">
-    <script>
-
-
-        document.addEventListener( 'DOMContentLoaded', function () {
-          new Splide( '#card-slider', {
-            perPage    : 2,
-            breakpoints: {
-              600: {
-                perPage: 1,
-              }
-            }
-          } ).mount();
-        } );
-      </script>
+    <link rel="stylesheet" href="splide/dist/css/themes/splide-skyblue.min.css">
+    
   </head>
   <body>
+    
       <div class="text-wrapper" id="home-page">
         <div class="header">
           <div class="welcome">
@@ -47,59 +35,41 @@
         </div>
       </div>
 
-      <div class="text-wrapper" id="project-page" style="display: none;">
-        <h1>
-          This is my projects page (in development)
-        </h1>
-        <div id="card-slider" class="splide">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="image01.jpg">
-                <h4>Heading 01</h4>
-                <div>
-                  Description 01
-                </div>
-              </li>
-              <li class="splide__slide">
-                <img src="image02.jpg">
-                <h4>Heading 02</h4>
-                <div>
-                  Description 02
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
+      <div class="text-wrapper" id="project-page" style="display: none;">
+        <h2>
+          This is my projects page (in development)
+        </h2>
+        <p>For the time being, please refer to my GitHub page at:</p>
+        <a href="https://github.com/digitalpanda213">github.com/digitalpanda213</a>
+      </div>
       <div class="text-wrapper" id="contact-page" style="display: none;">
         
-        <h1>
+
+        <h2>
           This is my contact page (in development)
-        </h1>
-        <hr/>
+        </h2>
         <ul>
-          <li>Phone - (561) 603-9316</li>
-          <li>Email - coatesal@appstate.edu</li>
-          <li>LinkedIn - linkedin.com/in/coateslee</li>
+          <li>Phone - (561) 603-9316 </li>
           <li>Address - Mount Holly, NC, USA</li>
-          <li>GitHub - github.com/digitalpanda213</li>
+          <li>Email - <address href="mailto:coatesal@appstate.edu">coatesal@appstate.edu</address></li>
+          <li>LinkedIn - <a href="https://www.linkedin.com/in/coatesal">linkedin.com/in/coateslee</a></li>
+          <li>GitHub - <a href="https://github.com/digitalpanda213">github.com/digitalpanda213</a></li>
         </ul> 
       </div>
+
+
       <div class="navbar">
         <a class="menu-button" id="home-nav">Home</a>
         <a class="menu-button" id="project-nav">projects</a>
         <a class="menu-button" id="contact-nav">Contact</a>
       </div>
       
-    
-    
+      
     <div class="falling-leaves"></div>
     <!-- https://codepen.io/zephyo/pen/gZamXe -->
     <script src="LandingPage2.js"></script>
     <!-- https://codepen.io/at89/pen/zKomyN -->
     <script src="Leaves.js"></script>
-    <script src="splide/dist/js/splide.min.js"></script>
   </body>
 </html>

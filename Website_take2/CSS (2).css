@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC');
+/* #region css reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* #endregion */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  color: #3e4047;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.2rem;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.16, 0.2, 0.38, 0.98);
+}
+
+.welcome {
+  font-size: 2rem;
+  color: rgba(175, 175, 175, 0.342);
+  position: absolute;
+  width: 90%;
+  transition: inherit;
+}
+
+.header {
+  position: relative;
+  font-weight: 600;
+  font-size: 5rem;
+  transition: inherit;
+}
+.header::first-letter {
+  font-size: 6.7rem;
+}
+
+.description {
+  width: 600px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  line-height: 2.1rem;
+  transition: inherit;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  line-height: 4.6rem;
+  transition: inherit;
+}
+
+.menu-button {
+  color: #000;
+  border: solid;
+  border-width: 1px;
+  border-color: #000;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+.menu-button:before {
+  content: '';
+  background: #000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  margin: 00px;
+  transition: inherit;
+}
+.menu-button:hover {
+  border-color: #fff;
+  color: #fff;
+}
+.menu-button:hover:before {
+  opacity: 1;
+  margin: 0;
+}
+
+.middle-element {
+  font-style: italic;
+  margin-left: 20px;
+  margin-right: 20px;
+}

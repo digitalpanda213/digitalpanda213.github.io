@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <link rel="stylesheet" href="splide/dist/css/themes/splide-skyblue.min.css">
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#card-slider', {
+		perPage    : 1,
+		breakpoints: {
+			600: {
+				perPage: 1,
+			}
+		}
+	} ).mount();
+} );
+    </script>
+    <style>
+        .splide__slide img {
+            width : 300px;
+            height: auto;
+        }
+        .splide__slide{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            text-align: center;
+            margin: 10px;
+            background-color: gainsboro;
+        }
+        #card-slider {
+            padding: 50px;
+            width: 70%;
+            height: 80%;
+            background-color: blanchedalmond;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="card-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="notebook1.jpg">
+                    <img src="notebook1.jpg">
+                    <h4>Heading 01</h4>
+                    <div>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quibusdam impedit sapiente dolores aspernatur debitis nam ex eos inventore, unde autem nisi saepe. Est molestias eaque repudiandae deserunt ad labore.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore distinctio totam odit maiores ducimus facilis quaerat fuga dolorum, ad dicta ea nam quidem repellat. Rem reprehenderit nostrum adipisci illum dolore.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis consectetur quis, officia modi quo debitis. Natus eligendi perspiciatis debitis doloremque libero ad labore ipsam, fuga laudantium incidunt. Quidem, sed aspernatur.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea architecto aspernatur natus. Sequi ut voluptas sed earum voluptates ea vero incidunt quisquam voluptatem alias iure, ad hic quos eligendi distinctio!
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="notebook1.jpg">
+                    <h4>Heading 02</h4>
+                    <div>
+                        Description 02
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="notebook1.jpg">
+                    <h4>Heading 02</h4>
+                    <div>
+                        Description 02
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="notebook1.jpg">
+                    <h4>Heading 02</h4>
+                    <div>
+                        Description 02
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="notebook1.jpg">
+                    <h4>Heading 02</h4>
+                    <div>
+                        Description 02
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="splide/dist/js/splide.min.js"></script>
+  </body>
+</html>

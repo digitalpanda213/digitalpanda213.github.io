@@ -7,13 +7,6 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
 blockquote,
 pre,
 a,
@@ -46,9 +39,6 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -95,9 +85,15 @@ ol,
 ul {
   list-style: none;
 }
+li {
+  margin: .75em;
+}
 blockquote,
 q {
   quotes: none;
+}
+address {
+  display: inline;
 }
 blockquote:before,
 blockquote:after,
@@ -137,6 +133,7 @@ body {
   height: 90%;
   transition: transform 0.7s cubic-bezier(0.16, 0.2, 0.38, 0.98);
 }
+
 
 .welcome {
   font-size: 2rem;
@@ -234,8 +231,6 @@ body {
   margin-left: 40px;
   margin-left: 40px;
 }
-
-
 
 body, html {
   height: 100%;
