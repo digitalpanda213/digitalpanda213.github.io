@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README</title>
+</head>
+<body>
+    <h1>
+        <a id="user-content-about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h1>
+        <ul>
+        <li>
+        <a href="#about">About</a>
+        <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#selecting-a-similarity-metric">Selecting a similarity metric</a></li>
+        <li><a href="#comparing-the-results">Comparing the results</a></li>
+        <li><a href="#results-using-canny-edge-detection">Results using Canny edge detection</a></li>
+        </ul>
+        </li>
+        <li><a href="#description-of-equipment--list-of-materials">Description of Equipment &amp; List of Materials</a></li>
+        <li><a href="#installation-instructions">Installation instructions</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#how-to-contribute">How to Contribute</a></li>
+        <li><a href="#licensing">Licensing</a></li>
+        <li><a href="#instructions-for-use">Instructions for Use</a></li>
+        </ul>
+        <h2>
+        <a id="user-content-introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
+        <p>Most digital photomosaics are created by comparing average pixels of images and more efficient programs create maps or dictionaries of photo – photo average pixel value pairs. With some optimizations, this process can create mosaics fast enough to mosaic-ize videos in real-time. However, this photomosaic generator pursues more advanced mosaics with sub-tile accuracy rather than fast generations. The goal of this project is not a particular result, but rather a sense of detail within each tile. This photomosaic generator accomplishes this by calculating the Bray–Curtis dissimilarity between images. Depending on the result desired, it can also use canny edge detection to create more stylized results.</p>
+        <h2>
+        <a id="user-content-selecting-a-similarity-metric" class="anchor" href="#selecting-a-similarity-metric" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Selecting a similarity metric</h2>
+        <p>There are many ways to calculate the similarity/dissimilarity between vectors, or more specifically images. For this project only distance metrics part of the SciPy project were considered. By advice of my supervisor, first the Jaccard dissimilarity was considered.</p>
+        <p>In order initially select a metric, first the results were simply compared visually using pyplot.</p>
+        <p>This is was the baseline comparison using the difference of the mean value.
+        <a href="./readme-Images/swirl-comparison.jpg" target="_blank" rel="noopener noreferrer"><img src="./readme-Images/swirl-comparison.jpg" alt="" style="max-width:70%;"></a></p>
+        <p>Finally, in an attempt to improve the reuslts, the value of each tile can be scaled by the simularity to the target tile. This dramatically reduces noise in dark arrays and helps improve contrast.
+        <a href="./readme-Images/Braycurtisswirl1000adj.png" target="_blank" rel="noopener noreferrer"><img src="./readme-Images/Braycurtisswirl1000adj.png" alt="" style="max-width:70%;"></a></p>
+        <h2>
+        <a id="user-content-comparing-the-results" class="anchor" href="#comparing-the-results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Comparing the results</h2>
+        <p>Using average values worked as expected. It performed well until the swirl lines became too small and close together to be rendered given the tile size.</p>
+        <p>The Jaccard distance performed unexpectedly bad. This will be addressed later.</p>
+        <p>The Bray-Curtis performed fairly well, maintaining the swirl even in the center. However, It is quite noisey. This can be partially remedied by scaling the pixel values by the score as shown in the last example.</p>
+        <p>As a final example, compare the results using averages vs Bray-Curtis (adjusted by score) on a photopragh.
+        <a href="readme-Images/photo-comparison.jpg" target="_blank" rel="noopener noreferrer"><img src="readme-Images/photo-comparison.jpg" alt="" style="max-width:70%;"></a></p>
+        <p>There is clearly a great potential for improvement over the method using Bray-Curtis dissimilarity, however, it does seem to be a clear improvement over using the average in terms of detail. Notice the wood grain, and the face of the women in the background.</p>
+        <h2>
+        <a id="user-content-results-using-canny-edge-detection" class="anchor" href="#results-using-canny-edge-detection" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Results using Canny edge detection</h2>
+        <p><a href="readme-Images/Figure_1123.png" target="_blank" rel="noopener noreferrer"><img src="readme-Images/Figure_1123.png" alt="" style="max-width:70%;"></a>
+        <a href="readme-Images/Figure_12.png" target="_blank" rel="noopener noreferrer"><img src="readme-Images/Figure_12.png" alt="" style="max-width:70%;"></a></p>
+        <h1>
+        <a id="user-content-description-of-equipment--list-of-materials" class="anchor" href="#description-of-equipment--list-of-materials" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description of Equipment &amp; List of Materials</h1>
+        <p>This a project was created in Python 3.6 and currently requires "kmnist-train-imgs.npz" from <a href="https://github.com/rois-codh/kmnist">https://github.com/rois-codh/kmnist</a></p>
+        <p>It is also dependant on Numpy, SciPy, PIL, and matplotlib.</p>
+        <p>"KMNIST Dataset" (created by CODH), adapted from "Kuzushiji Dataset" (created by NIJL and others), doi:10.20676/00000341</p>
+        <h1>
+        <a id="user-content-installation-instructions" class="anchor" href="#installation-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation instructions</h1>
+        <p>Use git clone <a href="https://github.com/digitalpanda213/mosaic">https://github.com/digitalpanda213/mosaic</a>
+        or download the zip from GitHub</p>
+        <p>As this project only exists in a Python script, a working Python installation is required. See <a href="https://www.python.org/" rel="nofollow">https://www.python.org/</a> for more details about installing Python.</p>
+        <h1>
+        <a id="user-content-faqs" class="anchor" href="#faqs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FAQs</h1>
+        <ul>
+        <li>
+        <strong>How do I get better result?</strong><br>
+        Some images look much better using Canny, some do not. As this is a matter of taste, adjust the tile size, number of character to use, and whether or not to use Canny.</li>
+        </ul>
+        <h1>
+        <a id="user-content-how-to-contribute" class="anchor" href="#how-to-contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Contribute</h1>
+        <p>If feel the desire to contribute, please use Git and open a pull request.<br>
+        Otherwise, I can be reached at <a href="mailto:coatesal@appstate.edu">coatesal@appstate.edu</a></p>
+        <h1>
+        <a id="user-content-licensing" class="anchor" href="#licensing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licensing</h1>
+        <p>All the contents of the repository are licensed under the CC BY-SA 4.0 license.</p>
+        <h1>
+        <a id="user-content-instructions-for-use" class="anchor" href="#instructions-for-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instructions for Use</h1>
+        <p>To run the script, use create_mosaic(Image, Dataset, NumTiles, use_canny=Boolean) where Image is the image to be turned into a mosaic, Dataset either “kkanji2-1.npz” or “kmnist-train-imgs.npz,” NumTiles is the numbers tile width-wise, and use_canny defaults to false.</p>
+</body>
+</html>
