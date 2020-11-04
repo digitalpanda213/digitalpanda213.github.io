@@ -1,0 +1,29 @@
+a {
+    max-width: 5vw;
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 'n s';
+    font-size: 1.2em;
+    padding: 0 10em 0 10em;
+    background-color: #ddd;
+    font-family: 'Segoe UI';
+}
+
+nav {
+    grid-area: n;
+    background-color: #eee;
+    padding: 1em;
+}
+
+section {
+    grid-area: s;
+    padding: 1em;
+    background-color: #fff;
+}
+#title {
+    font-size: 2em;
+    color: #444;
+}
