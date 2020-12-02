@@ -32,7 +32,7 @@ The Jaccard distance performed unexpectedly bad. This will be addressed later.
 The Bray-Curtis performed fairly well, maintaining the swirl even in the center. However, It is quite noisy. This can be partially remedied by scaling the pixel values by the score as shown in the last example.
 
 As a final example, compare the results using averages vs Bray-Curtis (adjusted by score) on a photograph.
-![](readme-Images/photo-comparison.jpg)
+![](readme-Images/Photo-comparison.jpg)
 
 There is great potential for improvement over the method using Bray-Curtis dissimilarity, however, it does seem to be a clear improvement over using the average in terms of detail. Notice the wood grain, and the face of the women in the background.
 
