@@ -77,6 +77,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  max-width:100%;
 }
 body {
   line-height: 1;
@@ -203,6 +204,7 @@ body {
   margin: 0;
 }
 
+
 .middle-element {
   font-style: italic;
   margin-left: 20px;
@@ -217,19 +219,30 @@ body {
   height: 5rem;
   line-height: 4.6rem;
   transition: inherit;
-  padding: 15px;
-  /* background-color: #CCC; */
+  background-color: #CCC;
   overflow: visible;
   position: fixed;
   bottom: 10%;
   width: 100%;
+  min-width: 200px;
   /* width: 60%;
   margin-left: 20%;
   margin-right: 20%; */
 }
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .navbar > * {
+    max-width:
+  }
+}
 .navbar a {
   margin-left: 40px;
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 body, html {
