@@ -219,7 +219,7 @@ body {
   height: 5rem;
   line-height: 4.6rem;
   transition: inherit;
-  background-color: #CCC;
+  /* background-color: #CCC; */
   overflow: visible;
   position: fixed;
   bottom: 10%;
