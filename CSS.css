@@ -235,11 +235,6 @@ body {
     gap: 10px;
   }
 }
-@media (max-width: 800px) {
-  .navbar > * {
-    max-width:
-  }
-}
 .navbar a {
   margin-left: 40px;
   margin-right: 40px;
